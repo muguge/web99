@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <!-- 引入bootstrap 样式文件 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- 引入我们自己的首页样式文件 -->
+    <link rel="stylesheet" href="css/index2.css">
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <title>江西软件职业技术大学阶梯读者协会官方网站2</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>						 
+                        <a class="navbar-brand" href="#">读者协会</a>						
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="#"> <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li><a href="#">联系管理</a></li>
+                            <li><a href="#">邮箱投稿</a></li>
+                            <li><a href="#">QQ群</a></li>
+                            <li><a href="#">读者</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="搜索">
+                            </div>
+                            <button type="submit" class="btn btn-default">搜索</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#" data-toggle="modal" data-target=".login">登录</a></li>
+                            <li><a href="#">注册</a></li>
+
+                        </ul>
+                        <!-- 模态框 -->
+                        <div class="modal fade login" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title">登录信息</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">邮箱名登录</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">密码</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> 记住用户名
+                                                  </label>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                        <button type="button" class="btn btn-primary">登录</button>
+                                    </div>
+                                </div>
+                                <!-- /.modal-content -->
+                            </div>
+                            <!-- /.modal-dialog -->
+                        </div>
+                        <!-- /.modal -->
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+        <div class="row" id="nav">
+            <ul>
+                <li class="col-lg-1">
+                    <a href="#">首页</a>
+                </li>
+                <li class="col-lg-1">
+                    <a href="#">信息资源</a>
+                    <ul>
+                        <li><a href="https://pan.baidu.com/s/1OF-sjq7UdCx404vbDbV48Q">-→综合性图书←-</a></li>
+                        <li><a href="https://pan.baidu.com/s/1TnSEljP97xqcdvyhg8ytdQ">--→自然科学←--</a></li>
+                        <li><a href="https://pan.baidu.com/s/1uOLUjTsiL1LQF38Ny0YLAw">--→社会科学←--</a></li>
+                        <li><a href="https://pan.baidu.com/s/18EKVyYmG0jKNLZ1joNUuYg">----→哲学←----</a></li>
+                    </ul>
+                </li>
+                <li class="col-lg-1">
+                    <a href="#">读者论坛</a>
+                    <ul>
+                        <li><a href="inphp/dzlt/dzlt1.php" target="blank">--→论说天下←--</a></li>
+                        <li><a href="inphp/dzlt/htj.php">---→<span style="color:red;">帖帖的</span>←---</a></li>
+                        <li><a href="inphp/dzlt/ft.php">--→发布帖子←--</a></li>
+                    </ul>
+                </li>
+                <li class="col-lg-1">
+                    <a href="#">我的...</a>
+                    <ul>
+                        <li><a href="inphp/jk/gr.php">--→个人主页←--</a></li>
+                        <li><a href="inphp/jk/dl.php">--→用户登录←--</a></li>
+                        <li><a href="inphp/dzlt/sxxx.php">--→私信消息←--</a></li>
+                        <li><a href="inphp/jk/jk.php">--→注册账号←--</a></li>
+                        <li><a href="inphp/jk/jkxgm.php">--→修改密码←--</a></li>
+                        <li><a href="inphp/jk/jkzh.php">--→找回密码←--</a></li>
+                        <li><a href="inphp/jk/tc.php">--→退出账号←--</a></li>
+                    </ul>
+                </li>
+                <li class="col-lg-1">
+                    <a href="#">学习之娱</a>
+                    <ul>
+                        <li><a target="_black" href="player.html"> 音乐播放器</a></li>
+                    </ul>
+                </li>
+                <li class="col-lg-1 col-lg-offset-6">
+                    <a href="#">更多</a>
+                    <ul>
+                        <li><a href="word/读协章程/050212512220.html">--→协会章程←--</a></li>
+                        <li><a href="inphp/gg/ggfb.php">--→发布公告←--</a></li>
+                        <li><a href="123.php">--→本站公告←--</a></li>
+                        <li><a href="inphp/pl/pl.php">--→漂流书屋←--</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <!-- 轮播图 -->
+        <div class="row">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/lbt_1.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="images/lbt_2.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="images/lbt_4.jpg" alt="...">
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- //结束轮播图 -->
+            <!-- 中间部分 -->
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row"></div>
+                    <div id="content">
+                        <div class="main">
+                            <div class="title">
+                                <img src="images/9.png" />
+                                <h3>每日一读</h3>                          
+                            </div>
+							 <span>2018.12.3</span>
+                            <div class="txt">								
+                                <img src="images/3.png" />
+                                <img src="images/4.png" />
+                                <p>读书的人，要甘于寂寞。寂寞能安定，定则心静，静则心清，清则心明，明则明白一切事理。作画，墨是黑的，只要眼明心清，便能悟出知白守黑，黑变猛进。</p>
+                                <span>——黄宾虹</span>
+                            </div>
+                        </div>
+                        <div class="main">
+                            <span>2018.12.2</span>
+                            <div class="txt">
+                                <img src="images/5.png" />
+                                <img src="images/6.png" />
+                                <p><b>one who will be pround and unbending in honest defeat. and humble and gentle in victory.</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在光明正大的失败中，头颅高昂，决不气馁；在春风得意时，谦逊温和。</p>
+                                <span>>>更多每日一读</span>
+                            </div>
+                        </div>
+                        <!-- 实例部分 -->
+                        <div class="main new hidden-sm hidden-xs">
+                            <div class="title">
+                                <img src="images/9.png" />
+                                <h3>最新资讯</h3>
+                            </div>
+                            <ul>
+                                <li>
+                                    <span></span>
+                                    <p><a href="sgcs/index.html" target="_blank">时光穿梭2028入口</a></p>
+                                </li>
+                                <li>
+                                    <span></span>
+                                    <p><a href="element/index.html" target="_blank">3D元素周期表（仅供学习参考！）</a></p>
+                                </li>
+                                <li>
+                                    <span></span>
+                                    <p><a href="sgcs/1.zip">时光穿梭源码下载</a></p>
+                                </li>
+                                <li>
+                                    <span class="show"></span>
+                                    <p><a href="xf/md.html" target="_blank">2019加学分名单（30天后撤销公示）</a></p>
+                                </li>
+                                <li>
+                                    <span></span>
+                                    <p><a href="https://damienzhong.com/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" target="_blank">学习大佬：搭建个人博客方法</a></p>
+                                </li>
+                                <li>
+                                    <span></span>
+                                    <p><a href="word/花展/102712171593.html">活动：阶梯读者协会和棋社游花展</a></p>
+                                </li>
+                                <li>
+                                    <span></span>
+                                    <p><a href="word/晨读/111809504221.html">活动：阶梯读者协会晨读</a></p>
+                                </li>
+                            </ul>
+                            <img src="images/7.png" />
+                        </div>
+                        <!-- //学习模块 -->
+                    </div>
+                </div>
+                <aside class="col-md-4 duxie">
+                    <a href="#" class="banner">
+                        <img src="images/duxie.jpg" alt="">
+                    </a>
+                    <a href="#" class="hot">
+                        <span class="btn btn-primary">你好</span>
+                        <h4 class="text-primary">欢迎加入读者协会</h4>
+                        <p>我们可以一起读书，一起愉快的学校，共同交流，共同进步 </p>
+                    </a>
+                    <div class="app" style="margin-top: 10px;">
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" @click="getJoke">每日一笑</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" @click="searchWeather">南昌天气</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home">
+                                <p>{{joke}}</p>
+
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile">
+                                <ul class="weather-list">
+                                    <li v-for="(item,index) in wertherList" v-if='index<3'>
+                                        <!-- 
+                                              <li v-for="(item, index) in items" v-if='index<2'>
+                                         -->
+                                        <div class="info-t">
+                                            <span>{{item.type}}</span>
+                                        </div>
+                                        <div class="info-tep">
+                                            <b>{{ item.low }}</b> ~C
+                                            <b> {{ item.high}}</b>
+                                        </div>
+                                        <div class="info-date">
+                                            <span>
+                                                   {{item.date}}
+                                                </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+
+
+            <div class="row">
+
+                <video width="320" height="240" controls>
+                        <source src=" https://v.qq.com/x/page/k0966ra0aut.html" type="video/mp4">
+                            
+   
+                    您的浏览器不支持 HTML5 video 标签。
+                    </video>
+            </div>
+        </div>
+        <!--    底部 -->
+        <footer class="row footer">
+            <dl class="mod_help_item col-xs-3 ">
+                <dt>合作伙伴</dt>
+                <dd> <a href="#">FU365</a></dd>
+            </dl>
+            <dl class="mod_help_item col-xs-3">
+                <dt>我的博客</dt>
+                <dd> <a href="#">木影风神 </a></dd>
+                <dd> <a href="#"> Enomothem </a></dd>
+                <dd> <a href="#">  Wupeng	</a></dd>
+                <dd> <a href="#">  zhuyitian  </a></dd>
+
+            </dl>
+            <dl class="mod_help_item col-xs-3">
+                <dt>高校合作</dt>
+                <dd> <a href="#">江西农业大学读者协会 </a></dd>
+
+            </dl>
+            <dl class="mod_help_item col-xs-3">
+                <dt>广告招租</dt>
+                <dd> <a href="#">暂时没有，嘿嘿 </a></dd>
+            </dl>
+        </footer>
+        <!-- 官网提供的 axios 在线地址 -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script>
+            var app = new Vue({
+                el: ".app",
+                data: {
+                    joke: "开心一笑",
+                    city: '南昌',
+                    wertherList: []
+                },
+                methods: {
+                    getJoke: function() {
+                        // console.log(this.joke);
+                        var that = this;
+                        axios.get("https://autumnfish.cn/api/joke").then(function(response) {
+                            // console.log(response)
+                            console.log(response.data);
+                            // console.log(this.joke);
+                            that.joke = response.data;
+                        }, function(err) {})
+                    },
+                    searchWeather: function() {
+
+                        axios.get('http://wthrcdn.etouch.cn/weather_mini', {
+                                params: {
+                                    city: this.city
+                                }
+                            })
+                            .then(res => {
+                                this.wertherList = res.data.data.forecast
+
+                            })
+                    }
+
+                },
+
+            })
+        </script>
+
+    </div>
+
+</body>
+
+</html>
