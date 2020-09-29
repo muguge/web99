@@ -22,10 +22,10 @@
     <script>
         var target =document.getElementById("btn1");
         target.onclick=function(){
-            var box1=document.getElementById("but1").style.left;
-            box1=box1.replace("px","");//100
-            box1=Number(box1) + 5;//强制转换
-            document.getElementById("box1").style.left=box1+"px";
+            var leftvalue=document.getElementById("box1").style.left;
+            leftvalue=leftvalue.replace("px","");//100
+            leftvalue=Number(leftvalue) + 5;//强制转换
+            document.getElementById("box1").style.left=leftvalue+"px";
         } 
     </script>
 </body>
