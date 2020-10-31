@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .tab{
+            width:300px;
+            height:300px;
+            border:1px solid black;
+            margin:100px auto;
+           
+        }
+        .tab .hd{
+             width:300px;
+             overflow: hidden;
+        }
+        .tab .hd span{
+            float:left;
+            width:99px;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+            line-height:40px;
+            text-align: center;
+            font-size: 16px;
+            font-family:"Microsoft Yahei";
+
+            
+        }
+        .tab .hd span .dur{
+            width:100px;
+            border:0px;
+            font-weight: bold;
+        }
+        .tab .bd{
+            width:300px;
+            height:259px;
+            overflow: hidden;
+        }
+        .tab .bd div{
+            float:left;
+            width:300px;
+            height:259px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <div class="hd">
+            <span class="dur"><a href="#1">新闻</a></span>
+            <span><a href="#2">体育</a></span>
+            <span><a href="#3">文化</a></span>
+        </div>
+   
+    <div class="bd">
+        <div id="1" >新闻</div>
+        <div id="2">体育</div>
+        <div id="3">文化</div>
+    </div>
+</div>
+</body>
+</html>
