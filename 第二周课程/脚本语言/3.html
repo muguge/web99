@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function selAll() {
+            for (var i = 0, hs = document.getElementsByName('hobby'), len = hs.length; i < len; i++) {
+                hs[i].checked = "checked";
+            }
+        }
+
+        function fanAll() {
+            for (var i = 0, hs = document.getElementsByName('hobby'), len = hs.length; i < len; i++) {
+                if (hs[i].checked) {
+                    hs[i].checked = false;
+                } else {
+                    hs[i].checked = "checked";
+                }
+            }
+        }
+
+        function unAll() {
+            for (var i = 0, hs = document.getElementsByName('hobby'), len = hs.length; i < len; i++) {
+                hs[i].checked = false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <p><input type="checkbox" name="hobby" />篮球</p>
+        <p><input type="checkbox" name="hobby" />足球</p>
+        <p><input type="checkbox" name="hobby" />乒乓球</p>
+        <p><input type="checkbox" name="hobby" />台球</p>
+        <p><input type="checkbox" name="hobby" />棒球</p>
+        <p><input type="button" onclick="selAll();" value="全选" />全选 </p>
+        <p><input type="button" onclick="unAll();" value="全不选" />全不选 </p>
+        <p><input type="button" onclick="fanAll();" value="反选" />反选 </p>
+    </form>
+
+</body>
+
+</html>

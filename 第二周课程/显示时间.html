@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>显示当前时间</title>
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+	</head>
+	<body>
+		<h1 id="time"></h1>
+		<script type="text/javascript">
+				$(function() {
+					setInterval(function() {
+					     var myDate = new Date;
+					     var year = myDate.getFullYear(); //获取当前年
+					     var mon = myDate.getMonth() + 1; //获取当前月
+					     var date = myDate.getDate(); //获取当前日
+					     var h = myDate.getHours();//获取当前小时数(0-23)
+					     var m = myDate.getMinutes();//获取当前分钟数(0-59)
+					     var s = myDate.getSeconds();//获取当前秒
+					     var week = myDate.getDay();
+					     var weeks = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+					     $("#time").html(year + "年" + mon + "月" + date + "日"+h+":"+m+":"+ s + " "+weeks[week]);
+					  }, 1000);
+				   
+				});
+		</script>
+	</body>
+	
+</html>

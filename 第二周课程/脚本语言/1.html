@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .warning {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper"></div>
+    <form action="" id="myform">
+        <p><label for="">姓名:</label>
+            <input type="text" id="myname" value='wav'>
+            <button onclick="use()">提交</button>
+            <span class="warning" id="tip1"></span></p>
+        <p><label for="">密码:</label>
+            <input type="text" id="mypassword"></p>
+    </form>
+    <script>
+        //alert("它们的和" + 1 + 2 + 3 + 4);
+        //alert(1 + 2 + 3 + 4 + "它们的和");
+        var username = document.getElementById("myname");
+        username = function use() {
+            // alert(username.value)
+            if (username.value.length < 8) {
+                // alert("登录名要大于8位");
+                document.getElementById("tip1").innerHTML = "登录名要大于8位";
+            }
+        }
+    </script>
+</body>
+
+</html>

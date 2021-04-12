@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>新模型</title>
+    <script src="index.js"></script>
+    <script src="index.css"></script>
+    <script src="vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <el-button @click="visible = true">Button</el-button>
+        <el-dialog :visible.sync="visible" title="Hello world">
+            <p>Try Element</p>
+        </el-dialog>
+    </div>
+
+    <div id="ap">
+        <elhead>你好</elhead>
+
+        <i class="el-icon-edit"></i>
+        <i class="el-icon-share"></i>
+        <i class="el-icon-delete"></i>
+        <i class="el-icon-platform-eleme"></i>
+    </div>
+</body>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: function() {
+            return {
+                visible: false
+            }
+        }
+    })
+    new Vue().$mount('#ap')
+</script>
+<style>
+    @import url("//unpkg.com/element-ui@2.15.1/lib/theme-chalk/index.css");
+</style>
+</body>
+
+</html>

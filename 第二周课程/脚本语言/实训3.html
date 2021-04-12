@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    function City(cityName, cityArea, cityPostcode, cityRegions) {
+        var cityName, cityArea, cityPostcode, cityRegions;
+        cityRegions = [{
+            orgionName = ["东湖区", "西湖区", "青山湖区", "新建区"],
+            orgionPostcode = ["", "", "", ""],
+            orgionArea = [, , , ],
+        }]
+    }
+
+    function printName() {
+        for (var i = 0, len = cityRegions.orgionName.length; i < len; i++) {
+            document.write("这个城市有" + orgionName[i] + "区");
+        }
+    }
+
+    function printPostcode() {
+        for (var i = 0, len = cityRegions.orgionPostcode.length; i < len; i++) {
+            document.write("这个城市的邮编" + orgionPostcode[i]);
+        }
+    }
+
+    function printArea() {
+        for (var i = 0, len = cityRegions.orgionArea.length; i < len; i++) {
+            document.write("这个城市的面积为" + orgionArea[i] + "平方千米");
+        }
+    }
+    var res = new res(City());
+</script>
+
+<body>
+
+</body>
+
+</html>
